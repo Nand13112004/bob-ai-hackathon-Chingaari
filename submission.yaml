@@ -1,0 +1,4 @@
+project_name: "Power Outage Prediction & Grid Equipment Failure Advisor"
+team_name: "[your-team-name]"
+summary: "Predict transformer failures within the next 7 days, rank risk, recommend maintenance and crew actions, and support operator questions with IBM Bob-style assistance."
+status: "in_progress"

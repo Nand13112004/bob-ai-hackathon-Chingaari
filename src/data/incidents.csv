@@ -1,0 +1,36 @@
+incident_id,transformer_id,incident_date,incident_type,failure_category,severity,downtime_hours,customers_affected,cause
+INC027,TR039,2026-01-25 21:58:00,Partial Discharge Alert,Insulation Degradation,Medium,3.25,1730,Elevated partial discharge activity
+INC008,TR065,2026-02-07 14:06:00,Protection Trip,External Fault,Medium,3.17,4295,Upstream or downstream electrical fault
+INC010,TR066,2026-02-12 18:15:00,Transformer Trip,Overloading,High,4.87,2846,Peak load exceeded recommended operating level
+INC026,TR049,2026-02-14 22:08:00,Protection Trip,External Fault,Medium,1.79,945,Upstream or downstream electrical fault
+INC029,TR029,2026-02-23 03:54:00,Protection Trip,External Fault,Medium,3.65,7445,Upstream or downstream electrical fault
+INC016,TR047,2026-02-25 14:37:00,Oil Quality Alert,Oil Degradation,Medium,1.49,4399,Deteriorating insulating oil condition
+INC006,TR089,2026-02-25 16:00:00,Transformer Trip,Thermal Overload,Medium,2.0,2900,Temporary overload during peak demand
+INC018,TR066,2026-03-01 09:33:00,Oil Quality Alert,Oil Degradation,Medium,0.69,762,Deteriorating insulating oil condition
+INC015,TR077,2026-03-06 12:50:00,Transformer Trip,Voltage Fluctuation,Medium,3.36,6633,Grid voltage instability
+INC004,TR058,2026-03-18 21:00:00,Transformer Trip,Vibration,High,3.5,5100,Abnormal vibration and mechanical stress
+INC017,TR068,2026-03-21 10:09:00,Cooling Alarm,Overheating,High,2.16,4141,High winding temperature and cooling stress
+INC020,TR032,2026-03-28 06:58:00,Cooling Alarm,Overheating,High,6.26,4238,High winding temperature and cooling stress
+INC022,TR068,2026-03-30 13:40:00,Partial Discharge Alert,Insulation Degradation,Medium,2.22,4348,Elevated partial discharge activity
+INC034,TR021,2026-03-31 21:13:00,Cooling Alarm,Overheating,High,3.46,5012,High winding temperature and cooling stress
+INC012,TR060,2026-04-04 23:58:00,Oil Quality Alert,Oil Degradation,Medium,2.66,6897,Deteriorating insulating oil condition
+INC023,TR004,2026-04-05 01:15:00,Transformer Trip,Overloading,High,4.95,423,Peak load exceeded recommended operating level
+INC033,TR032,2026-04-13 03:04:00,Oil Quality Alert,Oil Degradation,Medium,0.99,4829,Deteriorating insulating oil condition
+INC030,TR007,2026-04-17 16:50:00,Oil Quality Alert,Oil Degradation,Medium,3.52,5009,Deteriorating insulating oil condition
+INC025,TR091,2026-04-18 15:48:00,Protection Trip,External Fault,Medium,3.83,1028,Upstream or downstream electrical fault
+INC002,TR027,2026-04-20 18:00:00,Transformer Trip,Thermal Overload,High,4.0,6200,High load and elevated temperature
+INC009,TR031,2026-04-25 19:39:00,Cooling Alarm,Overheating,High,4.0,5489,High winding temperature and cooling stress
+INC035,TR021,2026-04-26 06:52:00,Transformer Trip,Voltage Fluctuation,Medium,1.23,3265,Grid voltage instability
+INC031,TR097,2026-04-26 07:14:00,Transformer Trip,Voltage Fluctuation,Medium,2.46,2640,Grid voltage instability
+INC013,TR055,2026-04-29 00:30:00,Oil Quality Alert,Oil Degradation,Medium,3.93,6852,Deteriorating insulating oil condition
+INC032,TR028,2026-05-09 02:48:00,Transformer Trip,Overloading,High,7.56,5649,Peak load exceeded recommended operating level
+INC001,TR012,2026-05-15 06:30:00,Transformer Failure,Overheating,Critical,11.5,18400,Overloading combined with cooling degradation
+INC021,TR029,2026-05-26 09:12:00,Protection Trip,External Fault,Medium,1.7,4150,Upstream or downstream electrical fault
+INC005,TR073,2026-05-28 12:30:00,Transformer Failure,Oil Degradation,Critical,9.0,15700,Oil moisture and acidity deterioration
+INC024,TR022,2026-06-06 02:33:00,Cooling Alarm,Overheating,High,6.44,4261,High winding temperature and cooling stress
+INC019,TR070,2026-06-06 05:30:00,Protection Trip,External Fault,Medium,0.98,8251,Upstream or downstream electrical fault
+INC003,TR041,2026-06-10 03:30:00,Transformer Failure,Insulation Failure,Critical,14.0,23100,Partial discharge and insulation deterioration
+INC014,TR061,2026-06-14 18:50:00,Protection Trip,External Fault,Medium,1.12,5454,Upstream or downstream electrical fault
+INC007,TR096,2026-06-22 09:00:00,Transformer Failure,Insulation Failure,Critical,16.0,26800,Partial discharge and thermal stress
+INC011,TR081,2026-06-28 00:48:00,Oil Quality Alert,Oil Degradation,Medium,2.78,6308,Deteriorating insulating oil condition
+INC028,TR051,2026-06-30 03:59:00,Oil Quality Alert,Oil Degradation,Medium,3.78,4835,Deteriorating insulating oil condition

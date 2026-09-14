@@ -1,0 +1,16 @@
+crew_id,crew_name,base_location_id,base_latitude,base_longitude,crew_type,available,skill_level,max_distance_km
+CR001,Crew Alpha,LOC01,23.08,72.58,Electrical & Transformer,True,Expert,80
+CR002,Crew Bravo,LOC02,23.02,72.68,Transformer Repair,True,Expert,100
+CR003,Crew Charlie,LOC03,22.99,72.76,Electrical & Protection,True,Advanced,90
+CR004,Crew Delta,LOC04,22.82,72.72,Transformer Repair,True,Advanced,75
+CR005,Crew Echo,LOC05,22.7,72.6,Oil & Diagnostics,True,Expert,100
+CR006,Crew Foxtrot,LOC06,22.65,72.5,Electrical & Transformer,True,Advanced,80
+CR007,Crew Gamma,LOC07,22.85,72.45,Protection Systems,True,Intermediate,70
+CR008,Crew Horizon,LOC08,23.03,72.55,Transformer Repair,True,Expert,100
+CR009,Crew India,LOC09,23.12,72.43,Electrical & Diagnostics,False,Advanced,85
+CR010,Crew Jupiter,LOC10,22.9,72.9,Transformer Repair,True,Advanced,90
+CR011,Crew Kaveri,LOC01,23.08,72.58,Oil & Diagnostics,True,Intermediate,65
+CR012,Crew Lotus,LOC04,22.82,72.72,Emergency Response,True,Expert,120
+CR013,Crew Metro,LOC07,22.85,72.45,Emergency Response,True,Expert,120
+CR014,Crew Nova,LOC08,23.03,72.55,Electrical & Protection,False,Advanced,80
+CR015,Crew Orion,LOC10,22.9,72.9,Transformer Repair,True,Expert,110

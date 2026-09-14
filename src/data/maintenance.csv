@@ -1,0 +1,323 @@
+maintenance_id,transformer_id,maintenance_date,maintenance_type,technician,temperature_before_c,vibration_before_mm_s,oil_condition_score,maintenance_result,next_maintenance_date
+MAIN0067,TR024,2026-01-01 01:52:12,Preventive Maintenance,Team Bravo,74.59,3.182,70.74,Completed - Follow-up Required,2026-02-22
+MAIN0243,TR077,2026-01-02 14:43:22,Oil Testing,Team Bravo,59.91,2.087,76.64,Action Required,2026-01-14
+MAIN0022,TR008,2026-01-04 08:08:15,Routine Inspection,Team Alpha,61.44,2.579,92.53,Normal,2026-04-22
+MAIN0056,TR019,2026-01-04 13:49:01,Partial Discharge Test,Team Alpha,72.41,2.453,72.37,Action Required,2026-01-20
+MAIN0059,TR020,2026-01-04 17:25:58,Oil Testing,Team Bravo,78.3,2.232,71.6,Action Required,2026-01-14
+MAIN0103,TR035,2026-01-05 12:19:10,Routine Inspection,Team Alpha,73.05,3.416,78.32,Action Required,2026-01-21
+MAIN0106,TR037,2026-01-07 07:22:21,Oil Testing,Team Delta,72.52,3.222,66.01,Action Required,2026-01-14
+MAIN0240,TR076,2026-01-08 12:41:39,Oil Testing,Team Echo,63.26,2.821,85.74,Action Required,2026-01-15
+MAIN0127,TR042,2026-01-09 22:47:52,Thermal Inspection,Team Alpha,69.58,3.259,71.27,Hotspot Detected,2026-04-20
+MAIN0153,TR049,2026-01-11 00:27:36,Routine Inspection,Team Charlie,72.55,2.22,82.94,Action Required,2026-02-01
+MAIN0216,TR069,2026-01-12 19:22:48,Oil Testing,Team Charlie,63.06,2.238,90.31,Degraded,2026-02-26
+MAIN0199,TR064,2026-01-13 21:20:21,Oil Testing,Team Echo,60.16,2.203,81.07,Action Required,2026-01-25
+MAIN0064,TR023,2026-01-14 11:52:55,Oil Testing,Team Delta,75.44,1.106,75.33,Action Required,2026-01-22
+MAIN0198,TR064,2026-01-14 15:06:24,Thermal Inspection,Team Bravo,63.42,1.821,81.11,Normal,2026-04-03
+MAIN0057,TR019,2026-01-15 00:46:00,Partial Discharge Test,Team Charlie,69.41,1.953,80.82,Action Required,2026-01-30
+MAIN0314,TR098,2026-01-15 06:44:54,Vibration Inspection,Team Charlie,75.64,2.527,91.61,Action Required,2026-02-10
+MAIN0016,TR006,2026-01-15 14:03:35,Cooling System Inspection,Team Charlie,73.63,1.968,78.07,Normal,2026-04-30
+MAIN0035,TR012,2026-01-16 04:19:29,Preventive Maintenance,Team Charlie,71.18,2.974,81.86,Completed,2026-05-30
+MAIN0088,TR030,2026-01-16 05:56:08,Emergency Repair,Team Echo,74.38,2.043,68.32,Replacement Recommended,2026-02-15
+MAIN0110,TR038,2026-01-16 22:17:50,Cooling System Inspection,Team Alpha,66.33,2.273,62.29,Fan Issue Found,2026-05-08
+MAIN0028,TR010,2026-01-18 03:30:54,Oil Testing,Team Bravo,64.14,2.427,74.47,Action Required,2026-02-03
+MAIN0128,TR042,2026-01-18 08:45:10,Vibration Inspection,Team Delta,76.31,2.456,78.33,Elevated Vibration,2026-02-27
+MAIN0301,TR094,2026-01-18 13:39:05,Thermal Inspection,Team Echo,62.36,2.332,84.17,Action Required,2026-02-03
+MAIN0002,TR001,2026-01-19 01:23:47,Electrical Testing,Team Foxtrot,66.34,2.026,86.5,Passed,2026-05-12
+MAIN0147,TR048,2026-01-19 02:48:29,Vibration Inspection,Team Delta,71.29,2.196,90.27,Elevated Vibration,2026-02-14
+MAIN0013,TR005,2026-01-19 22:16:59,Preventive Maintenance,Team Charlie,66.49,3.219,78.99,Completed - Follow-up Required,2026-03-18
+MAIN0150,TR048,2026-01-21 02:11:42,Vibration Inspection,Team Echo,65.59,2.596,70.15,Elevated Vibration,2026-02-26
+MAIN0186,TR060,2026-01-21 05:56:10,Routine Inspection,Team Charlie,68.73,3.266,75.53,Minor Issue Found,2026-03-03
+MAIN0209,TR067,2026-01-21 09:41:33,Cooling System Inspection,Team Delta,68.67,2.536,81.17,Action Required,2026-02-05
+MAIN0220,TR070,2026-01-21 14:57:08,Oil Filtration,Team Foxtrot,62.52,1.598,92.59,Completed - Monitoring Required,2026-04-11
+MAIN0133,TR043,2026-01-22 10:00:53,Thermal Inspection,Team Delta,64.3,1.997,82.76,Normal,2026-07-16
+MAIN0289,TR090,2026-01-22 22:44:49,Electrical Testing,Team Echo,57.04,1.793,83.18,Passed,2026-06-08
+MAIN0168,TR054,2026-01-23 13:10:32,Preventive Maintenance,Team Foxtrot,61.29,2.142,83.41,Completed,2026-05-20
+MAIN0048,TR016,2026-01-24 17:52:23,Partial Discharge Test,Team Alpha,67.66,1.885,73.48,Action Required,2026-02-20
+MAIN0293,TR091,2026-01-25 15:05:31,Routine Inspection,Team Echo,69.31,2.917,75.89,Action Required,2026-02-05
+MAIN0009,TR004,2026-01-26 18:04:22,Emergency Repair,Team Alpha,66.26,1.814,65.2,Replacement Recommended,2026-02-22
+MAIN0310,TR097,2026-01-27 03:05:47,Routine Inspection,Team Alpha,59.75,2.548,74.88,Normal,2026-05-10
+MAIN0182,TR059,2026-01-28 02:03:48,Thermal Inspection,Team Charlie,65.16,1.582,80.59,Action Required,2026-02-24
+MAIN0006,TR003,2026-01-28 06:54:14,Routine Inspection,Team Echo,48.67,2.428,80.97,Normal,2026-05-19
+MAIN0045,TR015,2026-01-28 09:08:35,Thermal Inspection,Team Alpha,67.07,2.644,72.49,Hotspot Detected,2026-07-23
+MAIN0226,TR072,2026-01-28 16:03:04,Preventive Maintenance,Team Delta,64.45,2.173,73.3,Completed - Follow-up Required,2026-03-28
+MAIN0215,TR068,2026-01-29 03:49:27,Routine Inspection,Team Charlie,76.21,1.913,95.32,Action Required,2026-02-22
+MAIN0037,TR013,2026-01-30 06:53:07,Routine Inspection,Team Bravo,73.53,2.532,76.67,Minor Issue Found,2026-03-10
+MAIN0114,TR039,2026-01-30 17:30:42,Emergency Repair,Team Bravo,73.39,2.601,74.41,Replacement Recommended,2026-02-18
+MAIN0060,TR021,2026-01-31 22:13:08,Partial Discharge Test,Team Bravo,64.45,1.998,68.98,Elevated PD,2026-03-06
+MAIN0261,TR082,2026-02-02 04:39:01,Preventive Maintenance,Team Foxtrot,60.89,2.348,79.13,Completed - Follow-up Required,2026-03-06
+MAIN0271,TR085,2026-02-02 23:56:43,Oil Filtration,Team Delta,67.92,2.136,92.24,Completed,2026-06-09
+MAIN0027,TR010,2026-02-03 09:41:09,Oil Testing,Team Echo,73.11,2.622,77.03,Degraded,2026-03-09
+MAIN0011,TR004,2026-02-03 16:50:52,Electrical Testing,Team Echo,64.49,2.066,97.94,Passed,2026-04-27
+MAIN0044,TR014,2026-02-03 19:53:02,Preventive Maintenance,Team Alpha,75.96,2.685,74.67,Completed - Follow-up Required,2026-03-17
+MAIN0055,TR018,2026-02-04 01:27:26,Routine Inspection,Team Delta,61.28,2.154,83.2,Minor Issue Found,2026-03-17
+MAIN0214,TR068,2026-02-04 18:23:44,Routine Inspection,Team Alpha,62.34,1.477,87.81,Normal,2026-07-04
+MAIN0254,TR080,2026-02-05 00:57:42,Preventive Maintenance,Team Delta,61.55,2.305,83.17,Completed,2026-07-04
+MAIN0118,TR040,2026-02-05 16:44:57,Preventive Maintenance,Team Alpha,61.9,1.318,96.36,Completed - Follow-up Required,2026-03-22
+MAIN0233,TR074,2026-02-08 18:17:59,Oil Testing,Team Foxtrot,55.33,1.316,81.64,Good,2026-07-29
+MAIN0267,TR084,2026-02-08 19:51:49,Cooling System Inspection,Team Alpha,75.48,2.233,93.57,Fan Issue Found,2026-04-16
+MAIN0268,TR084,2026-02-09 04:29:45,Preventive Maintenance,Team Delta,81.29,3.281,86.68,Completed - Follow-up Required,2026-03-02
+MAIN0187,TR060,2026-02-09 04:44:11,Oil Testing,Team Delta,69.58,2.724,80.32,Action Required,2026-02-26
+MAIN0117,TR040,2026-02-10 15:37:43,Oil Testing,Team Charlie,62.76,2.094,88.11,Good,2026-06-24
+MAIN0269,TR084,2026-02-11 18:29:41,Routine Inspection,Team Echo,71.13,1.964,75.46,Minor Issue Found,2026-03-04
+MAIN0190,TR061,2026-02-12 00:08:58,Electrical Testing,Team Echo,67.12,1.41,79.27,Passed,2026-05-31
+MAIN0288,TR090,2026-02-12 00:46:11,Preventive Maintenance,Team Foxtrot,61.31,2.337,92.39,Completed,2026-07-25
+MAIN0051,TR017,2026-02-12 05:17:39,Routine Inspection,Team Echo,50.06,2.039,82.66,Normal,2026-04-28
+MAIN0126,TR041,2026-02-13 01:24:22,Emergency Repair,Team Charlie,79.01,3.247,55.07,Replacement Recommended,2026-03-13
+MAIN0159,TR051,2026-02-15 03:00:35,Oil Testing,Team Bravo,67.11,2.075,91.81,Good,2026-05-23
+MAIN0138,TR045,2026-02-15 04:11:37,Oil Filtration,Team Echo,73.11,2.388,92.02,Completed,2026-05-04
+MAIN0095,TR033,2026-02-15 15:03:23,Routine Inspection,Team Echo,65.64,2.006,83.56,Minor Issue Found,2026-03-10
+MAIN0007,TR003,2026-02-15 18:58:32,Routine Inspection,Team Echo,63.44,1.687,90.11,Normal,2026-07-17
+MAIN0154,TR049,2026-02-16 06:22:42,Oil Testing,Team Delta,64.13,2.134,85.28,Good,2026-05-20
+MAIN0061,TR021,2026-02-16 11:30:12,Partial Discharge Test,Team Bravo,66.62,2.527,81.6,Normal,2026-05-12
+MAIN0291,TR091,2026-02-18 05:58:01,Partial Discharge Test,Team Delta,68.6,2.333,96.49,Normal,2026-06-18
+MAIN0079,TR027,2026-02-18 22:25:36,Emergency Repair,Team Delta,73.48,4.102,66.14,Replacement Recommended,2026-03-04
+MAIN0255,TR080,2026-02-19 23:58:49,Routine Inspection,Team Delta,76.22,1.976,82.23,Minor Issue Found,2026-04-13
+MAIN0080,TR027,2026-02-20 15:11:30,Routine Inspection,Team Charlie,72.03,3.257,93.43,Normal,2026-06-02
+MAIN0257,TR081,2026-02-20 21:13:24,Preventive Maintenance,Team Echo,64.99,2.558,81.5,Completed - Follow-up Required,2026-04-21
+MAIN0043,TR014,2026-02-21 02:12:04,Vibration Inspection,Team Charlie,76.31,2.199,79.04,Action Required,2026-03-15
+MAIN0223,TR071,2026-02-22 03:59:20,Preventive Maintenance,Team Delta,67.25,1.955,69.23,Completed - Follow-up Required,2026-04-20
+MAIN0252,TR079,2026-02-22 11:14:02,Preventive Maintenance,Team Charlie,65.94,1.756,80.51,Completed,2026-05-13
+MAIN0244,TR077,2026-02-23 01:38:08,Oil Filtration,Team Echo,59.01,2.138,100.0,Completed,2026-08-06
+MAIN0149,TR048,2026-02-23 13:41:33,Routine Inspection,Team Foxtrot,68.93,2.074,90.96,Normal,2026-05-17
+MAIN0047,TR015,2026-02-23 20:06:03,Preventive Maintenance,Team Charlie,53.67,1.691,100.0,Completed,2026-06-08
+MAIN0108,TR037,2026-02-23 20:40:50,Oil Filtration,Team Echo,66.16,1.858,78.9,Completed,2026-08-14
+MAIN0311,TR097,2026-02-24 01:57:21,Cooling System Inspection,Team Alpha,67.3,1.443,100.0,Normal,2026-05-09
+MAIN0253,TR079,2026-02-24 06:25:48,Electrical Testing,Team Charlie,69.65,2.892,85.81,Failed - Repair Required,2026-03-09
+MAIN0010,TR004,2026-02-24 13:27:40,Preventive Maintenance,Team Foxtrot,66.13,2.765,87.09,Completed - Follow-up Required,2026-03-20
+MAIN0119,TR040,2026-02-24 18:31:27,Vibration Inspection,Team Foxtrot,73.85,2.674,77.5,Action Required,2026-03-10
+MAIN0024,TR009,2026-02-25 05:34:56,Oil Testing,Team Echo,64.09,2.393,61.87,Action Required,2026-03-14
+MAIN0100,TR035,2026-02-25 20:06:59,Electrical Testing,Team Alpha,65.25,2.06,87.43,Passed,2026-06-13
+MAIN0071,TR025,2026-02-26 01:15:11,Thermal Inspection,Team Foxtrot,54.54,1.547,70.34,Normal,2026-08-08
+MAIN0041,TR014,2026-02-26 13:00:45,Oil Testing,Team Bravo,65.67,1.926,95.6,Good,2026-07-27
+MAIN0306,TR096,2026-02-26 15:15:19,Cooling System Inspection,Team Delta,78.09,3.461,69.83,Action Required,2026-03-25
+MAIN0021,TR008,2026-02-27 04:57:21,Routine Inspection,Team Echo,65.62,1.577,92.3,Normal,2026-05-08
+MAIN0123,TR041,2026-02-28 16:02:19,Vibration Inspection,Team Charlie,83.04,4.205,60.46,Elevated Vibration,2026-04-20
+MAIN0308,TR096,2026-03-01 09:29:18,Emergency Repair,Team Delta,77.19,3.905,85.34,Repaired,2026-06-22
+MAIN0321,TR100,2026-03-01 14:38:01,Routine Inspection,Team Bravo,61.73,3.108,79.4,Action Required,2026-03-25
+MAIN0092,TR032,2026-03-01 22:05:28,Routine Inspection,Team Charlie,71.55,1.958,88.54,Normal,2026-06-29
+MAIN0322,TR100,2026-03-03 15:42:49,Oil Testing,Team Alpha,66.96,1.965,93.06,Good,2026-07-21
+MAIN0093,TR032,2026-03-04 16:29:39,Oil Filtration,Team Alpha,69.53,1.724,90.53,Completed,2026-07-19
+MAIN0259,TR081,2026-03-04 19:19:52,Preventive Maintenance,Team Alpha,59.34,1.982,94.8,Completed,2026-06-14
+MAIN0094,TR033,2026-03-05 01:06:40,Oil Testing,Team Foxtrot,68.51,2.565,83.1,Action Required,2026-03-25
+MAIN0161,TR052,2026-03-05 08:17:03,Cooling System Inspection,Team Echo,72.4,2.47,75.82,Fan Issue Found,2026-09-01
+MAIN0032,TR012,2026-03-05 11:21:08,Vibration Inspection,Team Charlie,85.64,3.106,52.03,Elevated Vibration,2026-04-12
+MAIN0089,TR030,2026-03-06 13:21:06,Routine Inspection,Team Foxtrot,64.45,2.95,69.85,Action Required,2026-03-26
+MAIN0312,TR097,2026-03-08 09:37:35,Routine Inspection,Team Bravo,66.0,2.294,77.93,Action Required,2026-03-27
+MAIN0171,TR056,2026-03-09 08:52:43,Routine Inspection,Team Alpha,54.79,2.033,80.91,Normal,2026-07-19
+MAIN0235,TR074,2026-03-10 22:36:22,Preventive Maintenance,Team Foxtrot,68.71,1.17,82.39,Completed,2026-07-18
+MAIN0049,TR016,2026-03-10 23:33:46,Routine Inspection,Team Charlie,63.19,2.73,64.76,Minor Issue Found,2026-04-19
+MAIN0272,TR085,2026-03-11 19:55:14,Routine Inspection,Team Echo,63.86,1.454,77.27,Normal,2026-08-04
+MAIN0073,TR025,2026-03-12 17:13:52,Oil Filtration,Team Foxtrot,68.27,1.453,92.56,Completed - Monitoring Required,2026-05-19
+MAIN0229,TR073,2026-03-14 14:07:57,Thermal Inspection,Team Bravo,96.55,4.491,54.06,Hotspot Detected,2026-07-13
+MAIN0134,TR043,2026-03-14 14:40:55,Electrical Testing,Team Bravo,64.48,2.214,79.42,Failed - Repair Required,2026-03-31
+MAIN0113,TR038,2026-03-14 22:33:41,Routine Inspection,Team Foxtrot,68.41,2.027,94.97,Normal,2026-06-24
+MAIN0313,TR097,2026-03-15 11:55:14,Routine Inspection,Team Bravo,71.8,2.339,80.38,Minor Issue Found,2026-04-21
+MAIN0250,TR078,2026-03-15 15:08:13,Vibration Inspection,Team Echo,65.32,2.21,69.58,Action Required,2026-04-04
+MAIN0031,TR011,2026-03-17 03:57:39,Routine Inspection,Team Echo,64.28,3.152,53.21,Minor Issue Found,2026-05-08
+MAIN0077,TR027,2026-03-17 15:58:15,Preventive Maintenance,Team Delta,64.2,4.07,83.95,Completed,2026-07-09
+MAIN0142,TR046,2026-03-18 13:33:35,Routine Inspection,Team Foxtrot,70.35,2.771,74.57,Action Required,2026-04-06
+MAIN0176,TR057,2026-03-18 18:16:44,Vibration Inspection,Team Echo,71.66,2.864,88.06,Action Required,2026-03-27
+MAIN0136,TR044,2026-03-19 17:27:10,Routine Inspection,Team Charlie,69.31,2.468,86.96,Minor Issue Found,2026-04-17
+MAIN0072,TR025,2026-03-19 18:42:13,Electrical Testing,Team Delta,71.29,3.255,94.74,Failed - Repair Required,2026-04-09
+MAIN0054,TR018,2026-03-20 12:25:55,Electrical Testing,Team Echo,72.03,3.325,71.8,Minor Deviation,2026-05-03
+MAIN0075,TR026,2026-03-20 14:49:23,Oil Filtration,Team Charlie,63.35,2.059,92.39,Completed,2026-09-13
+MAIN0121,TR041,2026-03-20 18:05:51,Oil Filtration,Team Echo,80.92,3.292,57.52,Completed,2026-08-03
+MAIN0135,TR044,2026-03-22 00:20:02,Cooling System Inspection,Team Charlie,70.06,2.796,84.83,Fan Issue Found,2026-07-01
+MAIN0098,TR034,2026-03-22 09:46:15,Routine Inspection,Team Foxtrot,72.31,2.113,82.41,Normal,2026-06-05
+MAIN0130,TR042,2026-03-22 16:41:19,Vibration Inspection,Team Delta,64.81,1.982,87.99,Normal,2026-05-29
+MAIN0112,TR038,2026-03-23 14:47:37,Thermal Inspection,Team Echo,57.66,1.509,64.81,Action Required,2026-03-30
+MAIN0249,TR078,2026-03-23 18:29:31,Preventive Maintenance,Team Alpha,72.01,2.585,94.57,Completed,2026-06-16
+MAIN0317,TR099,2026-03-24 06:45:06,Oil Filtration,Team Alpha,65.89,1.936,80.46,Completed,2026-06-23
+MAIN0234,TR074,2026-03-24 19:55:43,Oil Testing,Team Echo,52.94,1.736,74.23,Good,2026-09-19
+MAIN0258,TR081,2026-03-25 09:20:15,Oil Filtration,Team Delta,67.58,1.779,74.07,Completed - Monitoring Required,2026-07-11
+MAIN0099,TR034,2026-03-25 18:09:55,Electrical Testing,Team Charlie,53.5,3.095,73.81,Failed - Repair Required,2026-04-24
+MAIN0294,TR092,2026-03-26 01:27:11,Electrical Testing,Team Delta,58.43,2.491,77.63,Passed,2026-07-06
+MAIN0046,TR015,2026-03-26 03:56:08,Preventive Maintenance,Team Charlie,62.39,2.135,80.94,Completed,2026-07-29
+MAIN0309,TR096,2026-03-26 05:49:40,Routine Inspection,Team Bravo,75.17,3.217,91.79,Normal,2026-09-09
+MAIN0105,TR036,2026-03-26 11:46:28,Oil Testing,Team Echo,77.94,2.169,84.53,Degraded,2026-04-23
+MAIN0174,TR057,2026-03-27 14:07:03,Cooling System Inspection,Team Charlie,64.89,1.809,97.87,Normal,2026-07-24
+MAIN0184,TR060,2026-03-27 19:30:04,Routine Inspection,Team Alpha,65.74,2.426,76.89,Action Required,2026-04-18
+MAIN0256,TR081,2026-03-29 07:27:20,Preventive Maintenance,Team Echo,70.05,2.353,88.93,Completed,2026-06-01
+MAIN0227,TR072,2026-03-29 09:57:34,Preventive Maintenance,Team Charlie,72.39,2.318,90.7,Completed - Follow-up Required,2026-05-05
+MAIN0120,TR040,2026-03-29 17:55:43,Preventive Maintenance,Team Foxtrot,66.22,1.861,93.45,Completed,2026-08-28
+MAIN0183,TR059,2026-03-30 20:18:25,Oil Testing,Team Delta,55.82,1.828,92.38,Good,2026-07-30
+MAIN0003,TR001,2026-03-31 02:34:41,Vibration Inspection,Team Alpha,66.4,2.561,80.27,Elevated Vibration,2026-05-21
+MAIN0078,TR027,2026-04-01 19:12:21,Oil Testing,Team Charlie,81.16,2.969,68.58,Degraded,2026-05-22
+MAIN0005,TR002,2026-04-01 20:03:18,Cooling System Inspection,Team Alpha,70.53,2.144,83.88,Normal,2026-06-10
+MAIN0263,TR082,2026-04-04 17:48:27,Emergency Repair,Team Delta,66.23,2.288,60.69,Replacement Recommended,2026-04-25
+MAIN0318,TR099,2026-04-05 03:41:30,Emergency Repair,Team Echo,72.44,2.067,85.61,Repaired,2026-07-28
+MAIN0023,TR009,2026-04-05 20:32:50,Oil Testing,Team Bravo,53.93,1.661,97.92,Good,2026-10-02
+MAIN0156,TR050,2026-04-06 02:52:18,Electrical Testing,Team Bravo,66.72,2.206,69.72,Minor Deviation,2026-05-30
+MAIN0237,TR075,2026-04-06 08:45:58,Electrical Testing,Team Echo,62.62,2.648,79.25,Failed - Repair Required,2026-04-16
+MAIN0107,TR037,2026-04-06 11:58:02,Electrical Testing,Team Bravo,67.57,2.712,60.7,Failed - Repair Required,2026-04-28
+MAIN0283,TR089,2026-04-07 09:07:36,Oil Filtration,Team Foxtrot,73.56,3.005,77.17,Completed - Monitoring Required,2026-09-30
+MAIN0202,TR065,2026-04-07 09:20:16,Electrical Testing,Team Bravo,78.85,2.922,85.73,Failed - Repair Required,2026-05-04
+MAIN0050,TR016,2026-04-08 22:07:51,Routine Inspection,Team Foxtrot,66.3,2.909,85.57,Action Required,2026-05-06
+MAIN0303,TR095,2026-04-09 01:39:48,Emergency Repair,Team Alpha,76.76,2.091,74.71,Temporary Repair,2026-07-11
+MAIN0125,TR041,2026-04-09 05:50:05,Thermal Inspection,Team Charlie,69.74,2.954,66.22,Normal,2026-09-10
+MAIN0012,TR005,2026-04-09 05:59:22,Routine Inspection,Team Delta,75.26,2.948,71.57,Action Required,2026-04-17
+MAIN0146,TR047,2026-04-09 09:18:34,Electrical Testing,Team Charlie,67.07,2.285,74.06,Failed - Repair Required,2026-05-07
+MAIN0042,TR014,2026-04-10 16:08:28,Electrical Testing,Team Alpha,63.7,2.277,84.12,Minor Deviation,2026-05-14
+MAIN0082,TR028,2026-04-11 05:10:36,Routine Inspection,Team Echo,68.39,1.843,75.67,Normal,2026-10-05
+MAIN0145,TR047,2026-04-12 17:10:26,Oil Filtration,Team Echo,76.59,1.445,86.32,Completed - Monitoring Required,2026-06-19
+MAIN0087,TR030,2026-04-13 15:49:24,Oil Testing,Team Charlie,76.36,2.732,67.76,Degraded,2026-05-04
+MAIN0169,TR055,2026-04-14 07:17:14,Routine Inspection,Team Charlie,56.24,1.484,93.19,Normal,2026-08-29
+MAIN0304,TR095,2026-04-14 11:59:29,Oil Testing,Team Delta,74.47,2.28,93.34,Action Required,2026-04-25
+MAIN0210,TR067,2026-04-14 13:18:32,Electrical Testing,Team Charlie,59.37,2.422,75.68,Minor Deviation,2026-05-27
+MAIN0102,TR035,2026-04-14 19:45:06,Preventive Maintenance,Team Charlie,65.22,2.39,78.68,Completed,2026-09-14
+MAIN0247,TR078,2026-04-15 18:11:12,Emergency Repair,Team Alpha,77.98,2.442,94.79,Repaired,2026-07-21
+MAIN0163,TR052,2026-04-15 18:23:26,Preventive Maintenance,Team Delta,54.57,1.312,82.81,Completed,2026-07-17
+MAIN0193,TR062,2026-04-16 18:24:26,Routine Inspection,Team Foxtrot,72.68,2.499,67.54,Normal,2026-08-16
+MAIN0315,TR098,2026-04-17 12:57:30,Partial Discharge Test,Team Alpha,69.13,2.076,84.62,Normal,2026-10-04
+MAIN0265,TR083,2026-04-17 16:22:11,Routine Inspection,Team Echo,63.69,2.773,82.78,Action Required,2026-04-26
+MAIN0001,TR001,2026-04-17 19:07:32,Routine Inspection,Team Bravo,69.75,2.369,83.09,Action Required,2026-05-13
+MAIN0241,TR076,2026-04-18 12:04:26,Thermal Inspection,Team Alpha,67.74,1.359,97.78,Normal,2026-06-26
+MAIN0290,TR091,2026-04-18 22:47:58,Vibration Inspection,Team Foxtrot,57.14,2.186,75.08,Action Required,2026-04-27
+MAIN0277,TR087,2026-04-19 11:06:31,Routine Inspection,Team Alpha,58.69,2.322,94.16,Normal,2026-08-27
+MAIN0232,TR073,2026-04-19 17:29:23,Oil Filtration,Team Bravo,70.11,3.249,81.6,Completed,2026-06-24
+MAIN0319,TR100,2026-04-20 05:16:50,Preventive Maintenance,Team Bravo,64.02,2.564,76.11,Completed - Follow-up Required,2026-05-19
+MAIN0305,TR095,2026-04-20 09:57:48,Electrical Testing,Team Bravo,56.75,1.77,95.2,Passed,2026-08-28
+MAIN0246,TR077,2026-04-20 10:06:02,Oil Filtration,Team Alpha,66.83,1.828,96.82,Completed - Monitoring Required,2026-08-21
+MAIN0276,TR086,2026-04-20 14:21:50,Oil Testing,Team Delta,64.38,1.842,88.56,Good,2026-10-04
+MAIN0143,TR047,2026-04-21 12:46:58,Preventive Maintenance,Team Alpha,70.06,3.385,79.31,Completed - Follow-up Required,2026-05-20
+MAIN0273,TR086,2026-04-21 19:00:36,Oil Filtration,Team Bravo,57.51,1.819,86.02,Completed - Monitoring Required,2026-08-05
+MAIN0165,TR053,2026-04-22 04:09:35,Partial Discharge Test,Team Foxtrot,65.31,3.279,86.53,Action Required,2026-05-22
+MAIN0205,TR066,2026-04-22 17:56:50,Thermal Inspection,Team Foxtrot,63.59,2.794,80.46,Hotspot Detected,2026-07-17
+MAIN0026,TR009,2026-04-23 14:06:28,Oil Testing,Team Bravo,67.52,2.194,84.27,Degraded,2026-05-16
+MAIN0239,TR076,2026-04-24 16:43:29,Vibration Inspection,Team Delta,69.98,2.819,77.04,Action Required,2026-05-18
+MAIN0084,TR029,2026-04-24 17:42:30,Oil Testing,Team Bravo,64.8,3.229,77.81,Degraded,2026-05-29
+MAIN0104,TR036,2026-04-27 03:26:56,Electrical Testing,Team Foxtrot,69.86,2.347,80.04,Passed,2026-07-25
+MAIN0264,TR083,2026-04-27 06:04:35,Routine Inspection,Team Bravo,67.66,3.275,74.43,Action Required,2026-05-21
+MAIN0181,TR058,2026-04-28 03:21:41,Thermal Inspection,Team Delta,80.97,4.19,44.71,Action Required,2026-05-23
+MAIN0020,TR007,2026-04-28 10:16:12,Routine Inspection,Team Echo,69.53,2.292,67.24,Minor Issue Found,2026-05-20
+MAIN0129,TR042,2026-04-28 10:52:30,Routine Inspection,Team Echo,60.93,3.21,79.04,Action Required,2026-05-12
+MAIN0251,TR079,2026-04-30 08:00:10,Partial Discharge Test,Team Foxtrot,66.58,2.991,84.12,Action Required,2026-05-09
+MAIN0018,TR006,2026-04-30 21:07:16,Routine Inspection,Team Foxtrot,67.59,2.87,97.19,Minor Issue Found,2026-06-04
+MAIN0040,TR013,2026-05-01 00:35:59,Preventive Maintenance,Team Bravo,69.58,2.553,75.91,Completed - Follow-up Required,2026-06-04
+MAIN0090,TR031,2026-05-01 14:48:20,Thermal Inspection,Team Foxtrot,76.36,2.28,90.9,Normal,2026-07-15
+MAIN0140,TR046,2026-05-02 00:33:38,Oil Testing,Team Delta,59.16,1.786,99.43,Good,2026-07-26
+MAIN0248,TR078,2026-05-02 19:22:59,Routine Inspection,Team Alpha,57.94,1.731,85.59,Normal,2026-07-27
+MAIN0122,TR041,2026-05-03 20:58:14,Vibration Inspection,Team Echo,60.14,2.69,66.56,Action Required,2026-05-23
+MAIN0148,TR048,2026-05-03 21:29:15,Oil Testing,Team Charlie,65.45,2.816,85.66,Action Required,2026-05-29
+MAIN0063,TR022,2026-05-04 06:51:46,Thermal Inspection,Team Charlie,80.28,2.554,68.75,Hotspot Detected,2026-07-13
+MAIN0158,TR051,2026-05-04 16:29:17,Routine Inspection,Team Charlie,74.76,1.798,88.25,Action Required,2026-06-03
+MAIN0266,TR083,2026-05-04 23:06:15,Partial Discharge Test,Team Alpha,75.74,3.167,79.96,Action Required,2026-05-11
+MAIN0191,TR062,2026-05-04 23:25:38,Oil Testing,Team Bravo,74.74,2.428,69.62,Action Required,2026-05-25
+MAIN0091,TR031,2026-05-05 03:26:35,Preventive Maintenance,Team Bravo,63.58,3.202,90.04,Completed - Follow-up Required,2026-05-29
+MAIN0287,TR090,2026-05-06 17:04:47,Preventive Maintenance,Team Delta,70.98,2.262,74.09,Completed - Follow-up Required,2026-06-25
+MAIN0115,TR039,2026-05-07 03:16:59,Oil Filtration,Team Alpha,67.5,2.329,93.09,Completed,2026-09-19
+MAIN0218,TR069,2026-05-07 15:54:51,Routine Inspection,Team Echo,62.77,2.417,67.23,Minor Issue Found,2026-06-28
+MAIN0225,TR071,2026-05-07 22:28:18,Oil Filtration,Team Alpha,67.3,2.159,78.89,Completed - Monitoring Required,2026-08-23
+MAIN0195,TR063,2026-05-08 08:16:03,Electrical Testing,Team Echo,74.14,2.621,82.55,Minor Deviation,2026-06-26
+MAIN0068,TR024,2026-05-08 19:28:21,Preventive Maintenance,Team Charlie,71.07,1.971,92.62,Completed - Follow-up Required,2026-06-21
+MAIN0275,TR086,2026-05-09 05:06:09,Routine Inspection,Team Echo,58.32,2.955,82.18,Minor Issue Found,2026-06-20
+MAIN0197,TR063,2026-05-09 19:33:23,Thermal Inspection,Team Foxtrot,65.4,3.462,89.79,Hotspot Detected,2026-07-19
+MAIN0039,TR013,2026-05-10 12:53:33,Oil Testing,Team Delta,66.17,2.424,66.31,Action Required,2026-06-08
+MAIN0131,TR043,2026-05-11 13:56:55,Partial Discharge Test,Team Bravo,61.72,1.858,69.51,Action Required,2026-06-06
+MAIN0152,TR049,2026-05-12 01:23:44,Emergency Repair,Team Charlie,68.47,1.852,81.2,Replacement Recommended,2026-05-20
+MAIN0213,TR068,2026-05-12 06:43:27,Partial Discharge Test,Team Echo,57.83,2.488,77.9,Action Required,2026-05-20
+MAIN0155,TR050,2026-05-13 02:26:49,Emergency Repair,Team Bravo,67.82,2.747,86.58,Replacement Recommended,2026-05-24
+MAIN0230,TR073,2026-05-13 04:00:01,Thermal Inspection,Team Bravo,71.36,3.139,69.18,Action Required,2026-06-08
+MAIN0284,TR089,2026-05-13 15:40:52,Emergency Repair,Team Alpha,71.05,4.044,69.93,Temporary Repair,2026-07-21
+MAIN0316,TR098,2026-05-14 16:44:08,Oil Testing,Team Delta,88.71,2.562,68.74,Degraded,2026-06-24
+MAIN0180,TR058,2026-05-15 00:08:11,Cooling System Inspection,Team Alpha,76.39,3.795,66.67,Fan Issue Found,2026-10-06
+MAIN0296,TR092,2026-05-15 12:05:53,Preventive Maintenance,Team Bravo,72.89,1.304,94.09,Completed,2026-10-03
+MAIN0274,TR086,2026-05-15 21:40:47,Routine Inspection,Team Bravo,59.18,2.851,74.07,Minor Issue Found,2026-07-11
+MAIN0065,TR023,2026-05-16 04:04:17,Partial Discharge Test,Team Delta,60.43,1.961,81.04,Normal,2026-08-25
+MAIN0211,TR067,2026-05-17 02:08:00,Routine Inspection,Team Alpha,75.41,2.119,81.06,Action Required,2026-06-08
+MAIN0157,TR051,2026-05-17 04:47:43,Preventive Maintenance,Team Bravo,62.02,1.914,78.02,Completed,2026-11-02
+MAIN0292,TR091,2026-05-17 09:15:33,Partial Discharge Test,Team Echo,52.78,2.125,79.49,Normal,2026-07-28
+MAIN0015,TR006,2026-05-18 22:25:53,Oil Testing,Team Charlie,78.11,2.762,91.91,Action Required,2026-06-05
+MAIN0173,TR056,2026-05-19 03:36:11,Routine Inspection,Team Echo,51.07,1.861,88.89,Normal,2026-10-06
+MAIN0221,TR070,2026-05-19 06:53:22,Preventive Maintenance,Team Bravo,70.78,2.151,79.08,Completed - Follow-up Required,2026-06-27
+MAIN0081,TR027,2026-05-19 21:21:24,Oil Filtration,Team Alpha,78.32,2.985,64.45,Completed - Monitoring Required,2026-09-03
+MAIN0189,TR061,2026-05-19 23:37:03,Electrical Testing,Team Echo,61.3,2.843,74.39,Minor Deviation,2026-06-26
+MAIN0096,TR034,2026-05-20 05:27:23,Electrical Testing,Team Charlie,71.75,2.082,86.25,Passed,2026-07-27
+MAIN0109,TR037,2026-05-20 07:01:14,Thermal Inspection,Team Foxtrot,78.09,2.582,71.68,Hotspot Detected,2026-11-13
+MAIN0262,TR082,2026-05-20 09:23:01,Electrical Testing,Team Bravo,62.57,2.485,85.54,Passed,2026-09-25
+MAIN0170,TR055,2026-05-21 02:47:30,Vibration Inspection,Team Delta,59.14,2.771,82.35,Elevated Vibration,2026-06-20
+MAIN0141,TR046,2026-05-21 13:52:04,Oil Testing,Team Charlie,72.74,2.648,82.39,Action Required,2026-06-03
+MAIN0260,TR082,2026-05-21 23:32:10,Electrical Testing,Team Alpha,61.87,1.79,94.17,Passed,2026-11-06
+MAIN0207,TR066,2026-05-22 01:10:23,Routine Inspection,Team Echo,64.69,3.508,73.42,Minor Issue Found,2026-07-16
+MAIN0280,TR088,2026-05-22 12:17:24,Thermal Inspection,Team Delta,81.02,2.099,84.25,Hotspot Detected,2026-10-22
+MAIN0058,TR020,2026-05-22 21:54:38,Routine Inspection,Team Echo,71.8,3.247,57.97,Minor Issue Found,2026-07-12
+MAIN0038,TR013,2026-05-23 17:03:04,Vibration Inspection,Team Echo,66.95,2.591,78.97,Elevated Vibration,2026-07-02
+MAIN0224,TR071,2026-05-23 19:08:27,Cooling System Inspection,Team Echo,75.53,2.67,86.87,Normal,2026-10-22
+MAIN0192,TR062,2026-05-24 18:37:59,Oil Filtration,Team Charlie,67.24,1.878,91.98,Completed - Monitoring Required,2026-09-27
+MAIN0208,TR067,2026-05-24 20:53:26,Emergency Repair,Team Echo,65.47,2.479,87.22,Repaired,2026-10-09
+MAIN0178,TR058,2026-05-25 01:44:18,Partial Discharge Test,Team Delta,70.21,3.312,79.98,Normal,2026-09-30
+MAIN0278,TR087,2026-05-25 09:47:19,Emergency Repair,Team Foxtrot,75.36,2.317,76.91,Temporary Repair,2026-10-28
+MAIN0025,TR009,2026-05-25 12:41:39,Vibration Inspection,Team Delta,66.4,1.975,86.02,Action Required,2026-06-13
+MAIN0200,TR065,2026-05-27 03:26:55,Thermal Inspection,Team Echo,59.88,1.396,87.32,Normal,2026-07-29
+MAIN0297,TR093,2026-05-27 08:28:01,Routine Inspection,Team Alpha,66.46,2.986,83.56,Action Required,2026-06-05
+MAIN0086,TR029,2026-05-27 18:11:57,Oil Testing,Team Bravo,66.8,2.562,82.5,Degraded,2026-07-23
+MAIN0286,TR090,2026-05-27 21:56:00,Oil Testing,Team Foxtrot,68.28,1.769,86.77,Good,2026-09-12
+MAIN0298,TR093,2026-05-28 06:00:16,Routine Inspection,Team Echo,77.73,2.367,90.54,Normal,2026-08-24
+MAIN0194,TR063,2026-05-29 01:45:41,Oil Testing,Team Alpha,74.11,2.578,69.48,Action Required,2026-06-15
+MAIN0270,TR084,2026-05-29 09:12:50,Preventive Maintenance,Team Bravo,66.47,2.407,81.77,Completed,2026-08-21
+MAIN0132,TR043,2026-05-29 19:46:24,Partial Discharge Test,Team Delta,69.24,1.811,83.51,Normal,2026-09-06
+MAIN0074,TR025,2026-06-01 03:18:27,Oil Testing,Team Delta,74.3,2.681,74.3,Action Required,2026-06-16
+MAIN0201,TR065,2026-06-02 01:52:50,Partial Discharge Test,Team Echo,74.13,2.843,96.14,Elevated PD,2026-07-07
+MAIN0085,TR029,2026-06-02 06:20:23,Oil Filtration,Team Bravo,64.94,1.935,92.08,Completed,2026-09-03
+MAIN0151,TR049,2026-06-02 07:58:48,Preventive Maintenance,Team Charlie,78.14,2.94,78.44,Completed - Follow-up Required,2026-06-25
+MAIN0279,TR087,2026-06-02 21:19:08,Routine Inspection,Team Echo,72.39,2.83,81.3,Normal,2026-10-30
+MAIN0206,TR066,2026-06-03 04:15:17,Preventive Maintenance,Team Foxtrot,62.5,2.116,80.98,Completed,2026-08-11
+MAIN0236,TR074,2026-06-03 12:38:07,Preventive Maintenance,Team Echo,81.9,2.095,88.59,Completed - Follow-up Required,2026-07-21
+MAIN0034,TR012,2026-06-03 14:13:45,Routine Inspection,Team Charlie,82.15,3.504,62.58,Action Required,2026-06-15
+MAIN0212,TR068,2026-06-03 21:05:57,Routine Inspection,Team Echo,59.19,2.686,98.24,Normal,2026-11-10
+MAIN0204,TR066,2026-06-05 16:59:18,Preventive Maintenance,Team Bravo,69.72,2.107,84.22,Completed - Follow-up Required,2026-07-21
+MAIN0014,TR005,2026-06-06 05:51:54,Oil Filtration,Team Bravo,61.46,2.564,94.28,Completed - Monitoring Required,2026-08-21
+MAIN0164,TR053,2026-06-06 19:34:53,Oil Filtration,Team Alpha,73.27,2.642,77.61,Completed - Monitoring Required,2026-11-05
+MAIN0231,TR073,2026-06-06 22:09:57,Partial Discharge Test,Team Echo,81.22,2.669,47.78,Action Required,2026-06-13
+MAIN0076,TR026,2026-06-07 04:42:48,Oil Filtration,Team Bravo,74.13,1.842,96.74,Completed - Monitoring Required,2026-12-03
+MAIN0228,TR072,2026-06-07 09:06:00,Oil Filtration,Team Alpha,65.62,2.096,83.66,Completed - Monitoring Required,2026-11-01
+MAIN0166,TR053,2026-06-07 10:42:23,Routine Inspection,Team Delta,66.4,2.065,92.17,Normal,2026-10-16
+MAIN0029,TR010,2026-06-07 10:51:39,Cooling System Inspection,Team Charlie,66.08,2.439,82.47,Fan Issue Found,2026-08-09
+MAIN0017,TR006,2026-06-08 10:09:00,Partial Discharge Test,Team Echo,54.1,2.196,84.72,Normal,2026-11-17
+MAIN0307,TR096,2026-06-09 11:29:17,Oil Testing,Team Foxtrot,68.13,3.811,93.35,Good,2026-09-25
+MAIN0008,TR004,2026-06-09 16:06:09,Oil Testing,Team Alpha,65.13,2.442,75.91,Action Required,2026-07-05
+MAIN0172,TR056,2026-06-09 19:31:41,Preventive Maintenance,Team Bravo,66.23,2.095,89.96,Completed - Follow-up Required,2026-08-06
+MAIN0300,TR094,2026-06-11 04:07:42,Oil Filtration,Team Echo,59.32,1.464,91.34,Completed - Monitoring Required,2026-11-24
+MAIN0196,TR063,2026-06-11 13:20:19,Routine Inspection,Team Delta,75.61,2.411,74.09,Minor Issue Found,2026-07-30
+MAIN0030,TR011,2026-06-11 16:09:32,Oil Testing,Team Foxtrot,75.07,2.92,65.62,Degraded,2026-07-18
+MAIN0062,TR022,2026-06-11 20:14:39,Thermal Inspection,Team Bravo,61.33,1.904,93.09,Normal,2026-08-30
+MAIN0282,TR089,2026-06-12 03:35:34,Emergency Repair,Team Charlie,77.33,4.0,58.29,Replacement Recommended,2026-06-28
+MAIN0066,TR023,2026-06-12 04:29:12,Preventive Maintenance,Team Foxtrot,65.3,2.187,93.63,Completed,2026-11-16
+MAIN0160,TR052,2026-06-12 14:12:32,Thermal Inspection,Team Echo,69.49,3.344,82.44,Hotspot Detected,2026-10-15
+MAIN0101,TR035,2026-06-12 20:58:31,Emergency Repair,Team Alpha,68.13,2.317,62.67,Replacement Recommended,2026-07-02
+MAIN0070,TR024,2026-06-12 21:13:35,Thermal Inspection,Team Delta,77.73,2.866,65.57,Action Required,2026-06-25
+MAIN0320,TR100,2026-06-14 09:33:00,Electrical Testing,Team Alpha,72.2,2.694,76.05,Failed - Repair Required,2026-07-09
+MAIN0179,TR058,2026-06-15 20:15:56,Oil Testing,Team Alpha,70.86,3.761,55.05,Degraded,2026-08-12
+MAIN0144,TR047,2026-06-16 08:29:46,Oil Filtration,Team Foxtrot,63.81,1.701,88.85,Completed,2026-08-19
+MAIN0302,TR095,2026-06-16 15:28:49,Routine Inspection,Team Echo,72.41,2.234,80.32,Minor Issue Found,2026-07-21
+MAIN0139,TR046,2026-06-18 09:34:09,Electrical Testing,Team Charlie,63.75,1.502,83.57,Failed - Repair Required,2026-06-28
+MAIN0019,TR007,2026-06-18 11:51:33,Routine Inspection,Team Bravo,54.98,2.542,86.71,Normal,2026-12-05
+MAIN0111,TR038,2026-06-18 14:56:51,Routine Inspection,Team Bravo,66.91,2.203,85.42,Action Required,2026-06-25
+MAIN0245,TR077,2026-06-19 13:26:08,Routine Inspection,Team Alpha,63.82,3.376,70.98,Action Required,2026-07-06
+MAIN0162,TR052,2026-06-19 17:12:59,Cooling System Inspection,Team Alpha,54.65,2.113,80.09,Normal,2026-10-06
+MAIN0281,TR088,2026-06-19 20:56:02,Oil Testing,Team Alpha,65.95,1.673,75.28,Degraded,2026-08-16
+MAIN0238,TR075,2026-06-20 05:10:09,Routine Inspection,Team Bravo,72.16,3.055,62.04,Action Required,2026-07-08
+MAIN0097,TR034,2026-06-20 19:02:58,Vibration Inspection,Team Bravo,63.14,1.97,93.59,Normal,2026-11-24
+MAIN0217,TR069,2026-06-20 20:28:04,Electrical Testing,Team Alpha,64.99,2.096,81.43,Failed - Repair Required,2026-07-07
+MAIN0053,TR018,2026-06-21 10:09:52,Routine Inspection,Team Echo,62.14,2.856,79.25,Action Required,2026-06-28
+MAIN0036,TR012,2026-06-22 02:54:47,Oil Testing,Team Delta,67.07,3.64,49.03,Degraded,2026-07-23
+MAIN0188,TR061,2026-06-22 08:04:26,Electrical Testing,Team Foxtrot,65.7,2.564,68.29,Failed - Repair Required,2026-07-09
+MAIN0004,TR002,2026-06-22 14:22:10,Electrical Testing,Team Echo,67.68,3.034,80.8,Failed - Repair Required,2026-07-18
+MAIN0116,TR039,2026-06-23 02:32:54,Oil Testing,Team Charlie,75.12,2.955,78.3,Degraded,2026-08-17
+MAIN0219,TR069,2026-06-23 06:29:02,Emergency Repair,Team Foxtrot,60.75,2.227,70.37,Temporary Repair,2026-10-01
+MAIN0167,TR054,2026-06-23 09:42:38,Thermal Inspection,Team Bravo,64.88,2.32,76.0,Action Required,2026-07-12
+MAIN0033,TR012,2026-06-23 15:29:06,Thermal Inspection,Team Bravo,75.59,1.642,78.61,Normal,2026-12-04
+MAIN0299,TR093,2026-06-24 02:23:40,Emergency Repair,Team Delta,67.48,2.68,85.52,Replacement Recommended,2026-07-20
+MAIN0083,TR028,2026-06-24 07:49:21,Emergency Repair,Team Alpha,64.5,2.465,95.85,Repaired,2026-10-01
+MAIN0177,TR058,2026-06-24 20:38:37,Partial Discharge Test,Team Alpha,69.6,3.163,86.77,Normal,2026-11-05
+MAIN0069,TR024,2026-06-25 14:20:35,Cooling System Inspection,Team Delta,73.96,2.552,87.69,Fan Issue Found,2026-12-07
+MAIN0295,TR092,2026-06-25 21:06:55,Cooling System Inspection,Team Delta,72.83,2.315,82.19,Action Required,2026-07-11
+MAIN0185,TR060,2026-06-26 05:14:29,Oil Testing,Team Alpha,77.49,2.555,84.31,Degraded,2026-07-25
+MAIN0052,TR017,2026-06-26 15:44:22,Thermal Inspection,Team Echo,66.73,3.078,76.06,Hotspot Detected,2026-09-23
+MAIN0285,TR089,2026-06-27 07:36:33,Oil Testing,Team Alpha,79.24,3.467,60.67,Action Required,2026-07-19
+MAIN0203,TR065,2026-06-27 10:33:22,Cooling System Inspection,Team Alpha,64.28,1.462,94.68,Fan Issue Found,2026-10-24
+MAIN0175,TR057,2026-06-28 06:09:57,Vibration Inspection,Team Alpha,70.03,2.476,68.58,Action Required,2026-07-08
+MAIN0124,TR041,2026-06-28 09:37:17,Thermal Inspection,Team Charlie,69.66,3.418,56.72,Normal,2026-10-13
+MAIN0222,TR071,2026-06-28 15:55:08,Thermal Inspection,Team Echo,67.4,2.782,64.49,Action Required,2026-07-08
+MAIN0137,TR045,2026-06-28 21:40:39,Preventive Maintenance,Team Charlie,73.2,2.126,76.97,Completed - Follow-up Required,2026-08-26
+MAIN0242,TR076,2026-06-29 11:32:54,Partial Discharge Test,Team Charlie,70.1,2.4,78.94,Elevated PD,2026-07-25

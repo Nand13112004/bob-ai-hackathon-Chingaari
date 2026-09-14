@@ -1,0 +1,36 @@
+{
+  "threshold": 0.55,
+  "model_name": "XGBoost",
+  "risk_formula": {
+    "failure_risk": 0.55,
+    "grid_impact": 0.3,
+    "weather_risk": 0.15
+  },
+  "risk_categories": {
+    "CRITICAL": 70,
+    "HIGH": 50,
+    "MEDIUM": 25,
+    "LOW": 0
+  },
+  "priority_order": ["P1 - CRITICAL", "P2 - HIGH", "P3 - MEDIUM", "P4 - LOW"],
+  "required_columns": [
+    "transformer_id",
+    "timestamp",
+    "temperature_c",
+    "vibration_mm_s",
+    "partial_discharge_pc",
+    "oil_temperature_c",
+    "oil_moisture_ppm",
+    "oil_acidity_mgKOH_g",
+    "load_percentage",
+    "voltage_kv",
+    "current_a",
+    "humidity_percentage",
+    "rainfall_mm",
+    "wind_speed_kmh",
+    "pressure_hpa",
+    "lightning_probability",
+    "storm_probability",
+    "flood_risk"
+  ]
+}
