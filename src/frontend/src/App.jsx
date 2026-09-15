@@ -18,6 +18,7 @@ import {
   TrendingUp,
   Search,
   ArrowRight,
+  ArrowLeft,
   ChevronRight,
   RefreshCw,
   FileText,
@@ -101,7 +102,7 @@ function App() {
   const [manualId, setManualId] = useState('')
   const [manual, setManual] = useState(Object.fromEntries(sensorFields.map((field) => [field, ''])))
 
-  // Gemini-backed, database-grounded AI chat state
+  // Database-grounded operational assistant chat state
   const [bobQuestion, setBobQuestion] = useState('')
   const [bobMessages, setBobMessages] = useState([
     {
@@ -146,7 +147,7 @@ function App() {
       load('/api/prediction-history', setHistory)
       load('/api/prediction-history/analysis', setHistoryAnalysis)
     }
-    if (name === 'AURA AI') load('/api/bob/status', setBobStatus)
+    if (name === 'Grid Assistant') load('/api/bob/status', setBobStatus)
   }
 
   const evaluate = () => { setFlow('choose'); setView('Dashboard') }
@@ -271,8 +272,14 @@ function App() {
 
   const showBob = () => {
     const q = `Why is ${selected?.transformer_id} risky and what action is recommended?`
-    chooseView('AURA AI')
+    chooseView('Grid Assistant')
     askBob(q)
+  }
+
+  const returnToResult = () => {
+    if (!selected) return
+    setView('Dashboard')
+    setFlow('result')
   }
 
   const result = selected && (
@@ -324,10 +331,10 @@ function App() {
           whileHover={{ scale: 1.02 }}
           whileTap={{ scale: 0.97 }}
           className="bob-link"
-          onClick={() => chooseView('AURA AI')}
+          onClick={() => chooseView('Grid Assistant')}
         >
           <Bot size={18} />
-          <span>GEMINI AI COPILOT</span>
+          <span>GRID ASSISTANT</span>
         </motion.button>
       </motion.aside>
 
@@ -378,17 +385,18 @@ function App() {
                   onMaintenance={showMaintenance}
                   onCrew={showCrew}
                   onBob={showBob}
+                  onBack={returnToResult}
                   onAnother={() => { setFlow('choose'); setView('Dashboard'); setSelected(null) }}
                 />
               ) : (
                 <Empty text="Select an asset from the Risk Asset Registry or GIS Map to view full telemetry." />
               )
             )}
-            {view === 'Maintenance Advisor' && <Maintenance rows={maintenance} openDetail={openDetail} focus={actionTransformer} />}
-            {view === 'Crew Deployment' && <Crew rows={crews} focus={actionTransformer} />}
+            {view === 'Maintenance Advisor' && <Maintenance rows={maintenance} openDetail={openDetail} focus={actionTransformer} onBack={selected ? returnToResult : undefined} />}
+            {view === 'Crew Deployment' && <Crew rows={crews} focus={actionTransformer} onBack={selected ? returnToResult : undefined} />}
             {view === 'ML Analytics' && <Analytics data={analytics} />}
             {view === 'Check History' && <History rows={history} analysis={historyAnalysis} />}
-            {view === 'AURA AI' && <Bob messages={bobMessages} question={bobQuestion} setQuestion={setBobQuestion} ask={askBob} loading={bobLoading} status={bobStatus} />}
+            {view === 'Grid Assistant' && <Bob messages={bobMessages} question={bobQuestion} setQuestion={setBobQuestion} ask={askBob} loading={bobLoading} status={bobStatus} onBack={selected ? returnToResult : undefined} />}
           </motion.div>
         </AnimatePresence>
       </main>
@@ -701,7 +709,7 @@ function Result({ result, onDetail, onHistory, onMaintenance, onCrew, onBob, onA
           <Truck size={14} /> CREW DISPATCH
         </motion.button>
         <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }} onClick={onBob}>
-          <Bot size={14} /> ASK GEMINI AI
+          <Bot size={14} /> ASK GRID ASSISTANT
         </motion.button>
         <motion.button whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.97 }} onClick={onAnother}>
           <RefreshCw size={14} /> EVALUATE ANOTHER
@@ -816,9 +824,12 @@ function riskColor(level) {
 
 const Empty = ({ text }) => <div className="empty">{text}</div>
 
-function Detail({ detail, onDetail, onHistory, onMaintenance, onCrew, onBob, onAnother }) {
+function Detail({ detail, onDetail, onHistory, onMaintenance, onCrew, onBob, onBack, onAnother }) {
   return (
     <section className="data-view">
+      <button className="back" onClick={onBack}>
+        <ArrowLeft size={16} /> BACK TO CHECK RESULT
+      </button>
       <div className="result-head">
         <div>
           <span className="eyebrow amber">TRANSFORMER TELEMETRY DOSSIER</span>
@@ -861,10 +872,11 @@ function Detail({ detail, onDetail, onHistory, onMaintenance, onCrew, onBob, onA
   )
 }
 
-function Maintenance({ rows, openDetail, focus }) {
+function Maintenance({ rows, openDetail, focus, onBack }) {
   const visible = focus ? rows.filter((row) => row.transformer_id === focus.transformer_id) : rows
   return (
     <section className="data-view">
+      {onBack && <button className="back" onClick={onBack}><ArrowLeft size={16} /> BACK TO CHECK RESULT</button>}
       <h3>Prescriptive Maintenance Directives</h3>
       {visible.length === 0 && <Empty text="No transformer checks yet. Run a risk evaluation to view maintenance directives." />}
       {visible.map((row) => (
@@ -884,10 +896,11 @@ function Maintenance({ rows, openDetail, focus }) {
   )
 }
 
-function Crew({ rows, focus }) {
+function Crew({ rows, focus, onBack }) {
   const recommendation = focus?.crew_recommendation
   return (
     <section className="data-view">
+      {onBack && <button className="back" onClick={onBack}><ArrowLeft size={16} /> BACK TO CHECK RESULT</button>}
       <h3>Contingency Fleet & Deployment Logistics</h3>
       {focus && (
         <div className="asset-context">
@@ -1022,7 +1035,7 @@ function formatInline(str) {
   })
 }
 
-function Bob({ messages, question, setQuestion, ask, loading, status }) {
+function Bob({ messages, question, setQuestion, ask, loading, onBack }) {
   const chips = [
     'Why is TR068 high risk?',
     'Identify top critical transformers',
@@ -1033,6 +1046,7 @@ function Bob({ messages, question, setQuestion, ask, loading, status }) {
 
   return (
     <section className="bob-chat-container">
+      {onBack && <button className="back" onClick={onBack}><ArrowLeft size={16} /> BACK TO CHECK RESULT</button>}
       <div className="bob-header">
         <div>
           <span className="eyebrow amber">
@@ -1043,8 +1057,8 @@ function Bob({ messages, question, setQuestion, ask, loading, status }) {
         <div className="bob-status-badge">
           <span className="dot" />
           <div>
-            <strong>{status?.provider || 'AURA AI'}</strong>
-            <small>{status?.model || 'Gemini'}</small>
+            <strong>GRID ASSISTANT</strong>
+            <small>Operational Copilot</small>
           </div>
         </div>
       </div>
@@ -1073,9 +1087,8 @@ function Bob({ messages, question, setQuestion, ask, loading, status }) {
             className={`message-bubble ${msg.role}`}
           >
             <div className="message-meta">
-              <strong>{msg.role === 'user' ? 'GRID OPERATOR' : 'AURA AI'}</strong>
+              <strong>{msg.role === 'user' ? 'GRID OPERATOR' : 'GRID ASSISTANT'}</strong>
               <small>{msg.time}</small>
-              {msg.provider && <span className="provider-tag">{msg.provider}</span>}
             </div>
             <div className="message-content">{renderFormattedText(msg.text)}</div>
           </motion.div>
@@ -1092,7 +1105,7 @@ function Bob({ messages, question, setQuestion, ask, loading, status }) {
 
       <div className="bob-input-bar">
         <textarea
-          placeholder="Ask Gemini about evaluated transformer data (e.g. What is the status of TR068?)..."
+          placeholder="Ask about evaluated transformer data (e.g. What is the status of TR068?)..."
           value={question}
           onChange={(e) => setQuestion(e.target.value)}
           onKeyDown={(e) => {
