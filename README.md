@@ -94,6 +94,17 @@ npm install
 npm run dev -- --host 0.0.0.0
 ```
 
+## Deploying to Render and Vercel
+
+The backend and frontend are deployed independently. `render.yaml` defines the FastAPI web service, while `src/frontend/vercel.json` enables Vercel's single-page-app route fallback.
+
+1. Push this repository to GitHub and create a new **Render Blueprint** from it. Render reads `render.yaml`; enter `SUPABASE_URL`, `SUPABASE_KEY`, and (optionally) `GEMINI_API_KEY` as secret environment variables. Deploy it and copy the public service URL, for example `https://grid-operations-api.onrender.com`.
+2. In Vercel, import the same repository and set the project **Root Directory** to `src/frontend`. Vercel detects Vite and uses `npm run build` with `dist` as the output directory.
+3. In Vercel's environment variables, add `VITE_API_BASE_URL` with the Render URL from step 1 (no trailing slash), then deploy.
+4. Copy your final Vercel production URL into Render's `CORS_ORIGINS` variable. Use a comma-separated list when allowing multiple domains, such as the production domain and a Vercel preview domain. Redeploy the Render service after saving it.
+
+Keep backend credentials only in Render. `VITE_API_BASE_URL` is safe to expose because it is a public API URL; all Vite variables are embedded in the browser build.
+
 ## Demo
 
 The demo flow is:

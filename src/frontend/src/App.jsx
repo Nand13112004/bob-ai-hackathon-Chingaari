@@ -56,6 +56,8 @@ const requiredColumns = [
   'flood_risk',
 ]
 const sensorFields = requiredColumns.slice(2)
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '')
+const apiUrl = (path) => `${apiBaseUrl}${path}`
 
 const navItems = [
   { id: 'Dashboard', label: 'Overview Matrix', icon: LayoutDashboard },
@@ -119,7 +121,7 @@ function App() {
   const [history, setHistory] = useState([])
   const [historyAnalysis, setHistoryAnalysis] = useState(null)
 
-  const load = (url, setter) => fetch(url).then((res) => res.json()).then(setter)
+  const load = (url, setter) => fetch(apiUrl(url)).then((res) => res.json()).then(setter)
 
   useEffect(() => {
     load('/api/transformers', setTransformers)
@@ -166,7 +168,7 @@ function App() {
   }
 
   const runBatch = async () => {
-    const res = await fetch('/api/predict/batch', {
+    const res = await fetch(apiUrl('/api/predict/batch'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ rows: fileState.rows }),
@@ -186,7 +188,7 @@ function App() {
   const runManual = async () => {
     const missing = sensorFields.filter((field) => manual[field] === '')
     if (!manualId || missing.length) return alert(`Enter all telemetry readings before running analysis. Missing: ${missing.join(', ')}`)
-    const res = await fetch('/api/predict', {
+    const res = await fetch(apiUrl('/api/predict'), {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ transformer_id: manualId, timestamp: new Date().toISOString(), ...manual }),
@@ -208,7 +210,7 @@ function App() {
     setBobLoading(true)
 
     try {
-      const res = await fetch('/api/bob/query', {
+      const res = await fetch(apiUrl('/api/bob/query'), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ question: q }),
@@ -244,7 +246,7 @@ function App() {
 
   const showCrew = async () => {
     setView('Crew Deployment')
-    const res = await fetch(`/api/crew?transformer_id=${selected.transformer_id}`)
+    const res = await fetch(apiUrl(`/api/crew?transformer_id=${selected.transformer_id}`))
     if (res.ok) {
       const rows = await res.json()
       setCrews(rows)

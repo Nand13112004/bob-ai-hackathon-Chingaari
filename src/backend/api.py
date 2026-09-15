@@ -9,6 +9,7 @@ from typing import Any, Dict, List
 
 import pandas as pd
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 
 from src.advisor.crew_optimizer import crew_recommendation, distance_km
 from src.advisor.maintenance_advisor import maintenance_recommendation
@@ -22,6 +23,25 @@ BASE_DIR = Path(__file__).resolve().parents[1]
 DATA_DIR = BASE_DIR / 'data'
 
 app = FastAPI(title='Grid Operations Advisor')
+
+# Vite proxies API calls during local development. In production the dashboard
+# is hosted on Vercel and calls this Render service directly, so allow only the
+# explicitly configured frontend origins.
+cors_origins = [
+    origin.strip()
+    for origin in os.getenv(
+        'CORS_ORIGINS',
+        'http://localhost:5173,http://127.0.0.1:5173',
+    ).split(',')
+    if origin.strip()
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=cors_origins,
+    allow_credentials=False,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
 _risk_assets_cache: List[Dict[str, Any]] | None = None
 _risk_assets_lock = Lock()
 _prediction_history: List[Dict[str, Any]] = []
