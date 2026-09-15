@@ -1,4 +1,39 @@
-project_name: "Power Outage Prediction & Grid Equipment Failure Advisor"
-team_name: "[your-team-name]"
-summary: "Predict transformer failures within the next 7 days, rank risk, recommend maintenance and crew actions, and support operator questions with IBM Bob-style assistance."
-status: "in_progress"
+team:
+  name: "TEAM CHINGAARI"
+  track: "AI"
+
+  lead:
+    name: "Mishva Bhadja"
+    email: "23dce007@charusat.edu.in"
+
+  members:
+    - name: "Jeel Sadariya"
+      email: "23dit063@charusat.edu.in"
+    - name: "Nand Delvadiya"
+      email: "23dce022@charusat.edu.in"
+    - name: "Tirth Butani"
+      email: "23dce012@charusat.edu.in"
+
+submission:
+  title: "GridSentinel - Power Outage Prediction & Advisor"
+
+  problem_statement: >
+    Utility teams need to identify transformer failure risks before outages
+    occur. Manual analysis of sensor readings, weather conditions, incidents,
+    maintenance history and transformer information makes proactive
+    maintenance difficult and time-consuming.
+
+  solution_summary: >
+    GridSentinel combines historical transformer and sensor data with machine
+    learning to predict transformer failure risk for the next seven days.
+    Users can either upload a CSV containing multiple transformers for batch
+    prediction or enter a particular transformer ID for an individual risk
+    assessment.
+
+  key_features:
+    - "7-day transformer failure risk prediction using machine learning"
+    - "CSV batch prediction for multiple transformers"
+    - "Individual transformer ID risk analysis"
+    - "Maintenance recommendations based on predicted risk"
+    - "Crew recommendation and grid impact analysis"
+    - "IBM Bob conversational interface"
