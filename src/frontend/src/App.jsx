@@ -97,6 +97,7 @@ function App() {
   const [assets, setAssets] = useState([])
   const [transformers, setTransformers] = useState([])
   const [selected, setSelected] = useState(null)
+  const [openedFromResult, setOpenedFromResult] = useState(false)
   const [flow, setFlow] = useState('idle')
   const [fileState, setFileState] = useState({ name: '', rows: [], errors: [] })
   const [manualId, setManualId] = useState('')
@@ -131,12 +132,14 @@ function App() {
     load('/api/bob/status', setBobStatus)
   }, [])
 
-  const openDetail = (id) => {
+  const openDetail = (id, fromResult = false) => {
+    setOpenedFromResult(fromResult)
     setView('Transformer Details')
     load(`/api/transformers/${id}`, setSelected)
   }
 
   const chooseView = (name) => {
+    setOpenedFromResult(false)
     setView(name)
     if (name === 'Dashboard') { setFlow('idle'); setSelected(null) }
     if (name === 'Risk Assets' || name === 'Grid Map') load('/api/risk-assets', setAssets)
@@ -243,9 +246,14 @@ function App() {
     }
   }
 
-  const showMaintenance = () => { setActionTransformer(selected); chooseView('Maintenance Advisor') }
+  const showMaintenance = () => {
+    setActionTransformer(selected)
+    chooseView('Maintenance Advisor')
+    setOpenedFromResult(true)
+  }
 
   const showCrew = async () => {
+    setOpenedFromResult(true)
     setView('Crew Deployment')
     const res = await fetch(apiUrl(`/api/crew?transformer_id=${selected.transformer_id}`))
     if (res.ok) {
@@ -273,11 +281,13 @@ function App() {
   const showBob = () => {
     const q = `Why is ${selected?.transformer_id} risky and what action is recommended?`
     chooseView('Grid Assistant')
+    setOpenedFromResult(true)
     askBob(q)
   }
 
   const returnToResult = () => {
     if (!selected) return
+    setOpenedFromResult(false)
     setView('Dashboard')
     setFlow('result')
   }
@@ -285,12 +295,12 @@ function App() {
   const result = selected && (
     <Result
       result={selected}
-      onDetail={() => openDetail(selected.transformer_id)}
-      onHistory={() => openDetail(selected.transformer_id)}
+      onDetail={() => openDetail(selected.transformer_id, true)}
+      onHistory={() => openDetail(selected.transformer_id, true)}
       onMaintenance={showMaintenance}
       onCrew={showCrew}
       onBob={showBob}
-      onAnother={() => { setFlow('choose'); setSelected(null) }}
+      onAnother={() => { setOpenedFromResult(false); setFlow('choose'); setSelected(null) }}
     />
   )
 
@@ -380,23 +390,23 @@ function App() {
               selected ? (
                 <Detail
                   detail={selected}
-                  onDetail={() => openDetail(selected.transformer_id)}
-                  onHistory={() => openDetail(selected.transformer_id)}
+                  onDetail={() => openDetail(selected.transformer_id, true)}
+                  onHistory={() => openDetail(selected.transformer_id, true)}
                   onMaintenance={showMaintenance}
                   onCrew={showCrew}
                   onBob={showBob}
-                  onBack={returnToResult}
-                  onAnother={() => { setFlow('choose'); setView('Dashboard'); setSelected(null) }}
+                  onBack={openedFromResult ? returnToResult : undefined}
+                  onAnother={() => { setOpenedFromResult(false); setFlow('choose'); setView('Dashboard'); setSelected(null) }}
                 />
               ) : (
                 <Empty text="Select an asset from the Risk Asset Registry or GIS Map to view full telemetry." />
               )
             )}
-            {view === 'Maintenance Advisor' && <Maintenance rows={maintenance} openDetail={openDetail} focus={actionTransformer} onBack={selected ? returnToResult : undefined} />}
-            {view === 'Crew Deployment' && <Crew rows={crews} focus={actionTransformer} onBack={selected ? returnToResult : undefined} />}
+            {view === 'Maintenance Advisor' && <Maintenance rows={maintenance} openDetail={openDetail} focus={actionTransformer} onBack={openedFromResult ? returnToResult : undefined} />}
+            {view === 'Crew Deployment' && <Crew rows={crews} focus={actionTransformer} onBack={openedFromResult ? returnToResult : undefined} />}
             {view === 'ML Analytics' && <Analytics data={analytics} />}
             {view === 'Check History' && <History rows={history} analysis={historyAnalysis} />}
-            {view === 'Grid Assistant' && <Bob messages={bobMessages} question={bobQuestion} setQuestion={setBobQuestion} ask={askBob} loading={bobLoading} status={bobStatus} onBack={selected ? returnToResult : undefined} />}
+            {view === 'Grid Assistant' && <Bob messages={bobMessages} question={bobQuestion} setQuestion={setBobQuestion} ask={askBob} loading={bobLoading} status={bobStatus} onBack={openedFromResult ? returnToResult : undefined} />}
           </motion.div>
         </AnimatePresence>
       </main>
@@ -827,9 +837,7 @@ const Empty = ({ text }) => <div className="empty">{text}</div>
 function Detail({ detail, onDetail, onHistory, onMaintenance, onCrew, onBob, onBack, onAnother }) {
   return (
     <section className="data-view">
-      <button className="back" onClick={onBack}>
-        <ArrowLeft size={16} /> BACK TO CHECK RESULT
-      </button>
+      {onBack && <button className="back" onClick={onBack}><ArrowLeft size={16} /> BACK TO CHECK RESULT</button>}
       <div className="result-head">
         <div>
           <span className="eyebrow amber">TRANSFORMER TELEMETRY DOSSIER</span>
@@ -884,7 +892,7 @@ function Maintenance({ rows, openDetail, focus, onBack }) {
           whileHover={{ y: -2 }}
           className="queue-row"
           key={`${row.transformer_id}-${row.checked_at}`}
-          onClick={() => openDetail(row.transformer_id)}
+          onClick={() => openDetail(row.transformer_id, Boolean(onBack))}
         >
           <strong>{row.transformer_id}</strong>
           <span>{row.maintenance_required ? row.urgency : 'NOMINAL CONDITION'}</span>
