@@ -1,9 +1,12 @@
-fastapi
-uvicorn
-pandas
-numpy
-joblib
-xgboost
-scikit-learn
-supabase
-python-dotenv
+fastapi==0.141.1
+uvicorn==0.52.4
+pandas==3.0.5
+numpy==2.5.3
+joblib==1.6.0
+xgboost==2.1.4
+# The saved model pipeline was trained with this version. Loading it with a
+# newer scikit-learn release can break serialized transformers such as
+# SimpleImputer.
+scikit-learn==1.6.1
+supabase==2.31.0
+python-dotenv==1.2.3

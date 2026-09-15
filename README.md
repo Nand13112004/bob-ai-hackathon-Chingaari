@@ -105,6 +105,8 @@ The backend and frontend are deployed independently. `render.yaml` defines the F
 
 Keep backend credentials only in Render. `VITE_API_BASE_URL` is safe to expose because it is a public API URL; all Vite variables are embedded in the browser build.
 
+The production dependency versions are pinned because the saved scikit-learn pipeline requires `scikit-learn==1.6.1`. If Render previously built the service with another version, use **Manual Deploy → Clear build cache & deploy** after pushing the dependency changes.
+
 ## Demo
 
 The demo flow is:
